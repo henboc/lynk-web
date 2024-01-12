@@ -36,3 +36,386 @@
     transform: rotate(360deg);
   }
 }
+
+.section-one {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/bac1.webp'); /* Adjust the image filename */
+  background-size: cover; /* Cover the entire container, maintaining aspect ratio */
+  background-position: center;
+  color: #fff; /* Set text color to white or your preferred color */
+  text-align: center;
+}
+.center-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.logo {
+  max-width: 40%;
+  height: auto;
+  display: block;
+}
+.logoP1{
+  font-size: 40px;
+  font-weight: 800;
+}
+
+
+/* Section 2*/
+.section-two {
+  padding: 100px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8e8e8; /* Set text color to white or your preferred color */
+  text-align: center;
+}
+
+.twoP1{
+  font-size: 40px;
+  font-weight: 800;
+  color: #272727;
+}
+
+.twoP2{
+  padding-top: 30px;
+  font-size: 20px;
+  color: #272727;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+@media (max-width: 768px) {
+  .section-two {
+    padding: 100px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e8e8; /* Set text color to white or your preferred color */
+    text-align: center;
+  }
+
+  .twoP1 {
+    font-size: 24px; /* Adjust the font size for mobile */
+    font-weight: 600; /* Adjust the font weight for mobile if needed */
+  }
+
+  .twoP2{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #272727;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+/* Section 3*/
+.section-three {
+  padding: 100px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* Set text color to white or your preferred color */
+  text-align: center;
+}
+
+.threeP1{
+  padding-top: 100px;
+  font-size: 60px;
+  font-weight: 800;
+  color: #4a1316;
+}
+.threeP2{
+  font-size: 20px;
+  color: #4a1316;
+}
+
+@media (max-width: 768px) {
+  .section-three {
+    padding: 100px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Set text color to white or your preferred color */
+    text-align: center;
+  }
+
+  .threeP1{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #4a1316;
+  }
+
+  .threeP2{
+    font-size: 20px;
+    color: #4a1316;
+  }
+}
+
+
+/* Section 4*/
+.section-four {
+  padding: 100px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #ffb6b9; Set text color to white or your preferred color */
+  background-color: #ffeeef;
+  text-align: center;
+}
+
+.fourP1{
+  padding-top: 150px;
+  font-size: 40px;
+  font-weight: 800;
+  color: #4a1316;
+}
+
+.fourP2{
+  font-size: 20px;
+  color: #4a1316;
+}
+
+@media (max-width: 768px) {
+  .section-four {
+    padding: 100px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffb6b9; Set text color to white or your preferred color */
+    background-color: #ffeeef;
+    text-align: center;
+  }
+  
+  .fourP1{
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #4a1316;
+  }
+  
+  .fourP2{
+    font-size: 18px;
+    color: #4a1316;
+  }
+}
+
+
+/* Section 5*/
+.section-five {
+  padding: 100px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #ffb6b9; Set text color to white or your preferred color */
+  background-color: #fff;
+  text-align: center;
+}
+
+.fiveP1{
+  font-size: 40px;
+  font-weight: 800;
+  color: #4a1316;
+}
+
+.fiveP2{
+  font-size: 20px;
+  color: #4a1316;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+@media (max-width: 768px) {
+  .section-five {
+    padding: 100px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffb6b9; Set text color to white or your preferred color */
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .fiveP1{
+    font-size: 30px;
+    font-weight: 800;
+    color: #4a1316;
+  }
+  
+  .fiveP2{
+    font-size: 18px;
+    color: #4a1316;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Section 6*/
+.section-six {
+  padding: 100px 100px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/sec6.webp'); /* Adjust the image filename */
+  background-size: cover; /* Cover the entire container, maintaining aspect ratio */
+  background-position: center;
+  color: #fff; /* Set text color to white or your preferred color */
+  text-align: center;
+}
+.curve{
+  border-radius: 10px !important;
+}
+
+.sixP1{
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.sixP2{
+  font-size: 20px;
+  color: #fff;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-bottom: 0px;
+}
+
+.sixP3{
+  font-size: 20px;
+  color: #fff;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 20px;
+}
+.sixP2Half{
+  color: #fff9f9;
+  font-weight: 700;
+}
+
+.form-control.curve {
+  border: 1px solid #4a1316;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.form-control.curve::placeholder {
+  color: #ffffff;
+}
+.sec6Sub{
+  float: left;
+  background-color: #fff !important;
+    border: 1px solid #fff !important;
+    color: #4a1316 !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.sec6Sub:hover{
+  float: left;
+  background-color: #fff !important;
+    border: 1px solid #fff !important;
+    color: #4a1316 !important;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .section-six {
+    padding: 100px 10px;
+  }
+  
+  .sixP1{
+    font-size: 30px;
+  }
+  
+  .sixP2{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .sixP3{
+    font-size: 17px;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+
+/* Section 7*/
+.section-seven {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4a1316; /* Set text color to white or your preferred color */
+  text-align: center;
+}
+.hrS{
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+.sec7HrefC{
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.sec7Href{
+  text-decoration: none !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  margin-right: 10px;
+}
+
+.sec7Href:hover{
+  text-decoration: none !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+
+@media (max-width: 768px) {
+  .sec7Href {
+    font-size: 13px;
+  }
+}
+
+/* about*/
+.ot-header{
+  background-color: #4a1316;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.ot-p{
+  color: #fff !important;
+  font-weight: 600 !important;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.ot-p2{
+  font-size: 16px;
+  padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .ot-p{
+    font-size: 20px;
+  }
+  .ot-header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
