@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 const SectionSix = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const [successMessage, setSuccessMessage] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
 
     const [formData, setFormData] = useState({
         firstName: '',
@@ -29,17 +30,15 @@ const SectionSix = () => {
       };
     
       const createWaitlistUser = async (data) => {
+        setIsLoading(true)
         try {
-        
-          const response = await fetch('http://localhost:3001/api/waitlistUsers', {
+          const response = await fetch(`http://93.127.162.78:8080/api/v1/create-waitlist-user`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify(data),
           });
-
-         // const data = response.json();
     
           if (response.status === 200) {
             console.log(response.status);
@@ -55,17 +54,20 @@ const SectionSix = () => {
                 setSuccessMessage('');
               }, 5000);
             console.log('WaitlistUser created successfully');
+            setIsLoading(false)
           } else {
             const result = await response.json();
-            setErrorMessage(result['error']);
+            setErrorMessage(result.message);
             setSuccessMessage('');
             setTimeout(() => {
                 setErrorMessage('');
               }, 10000);
             console.error('Failed to create WaitlistUser');
+            setIsLoading(false)
           }
         } catch (error) {
           console.error('An error occurred:', error);
+          setIsLoading(false)
         }
       };
     
@@ -97,7 +99,7 @@ const SectionSix = () => {
                     <input type="tel" className="form-control curve" id="phoneNumber" placeholder='Phone Number' style={{ border: '1px solid #fff', backgroundColor: 'transparent', color: '#ffffff' }} value={formData.phoneNumber}
                     onChange={handleChange}/>
                     </div>
-                    <button type="submit" className="btn btn-primary curve sec6Sub">Submit</button>
+                    <button type="submit" className="btn btn-primary curve sec6Sub">{isLoading ? 'Submitting...' : 'Submit'}</button>
                 </form>
                 </div>
             </div>
